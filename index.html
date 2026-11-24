@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>于鎮豪 Zhen-Hao Yu｜電子名片</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{--ink:#0d2a45;--ink2:#4f5d6b;--line:#e3e8e5;--paper:#fcfdfc;--blue:#004c80;--teal:#01615d;--green:#017335;--orange:#e87905;--accent:#0f6b2a;--accent-soft:#e7f3ea;--blue-soft:#e5eef6}
   *{box-sizing:border-box;margin:0;padding:0}
@@ -15,10 +15,10 @@
   .top{background:linear-gradient(135deg,var(--blue) 0%,var(--teal) 60%,var(--green) 100%);color:#fff;padding:34px 28px 28px;position:relative}
   .top::after{content:"";position:absolute;left:28px;bottom:0;width:48px;height:4px;border-radius:2px 2px 0 0;background:var(--orange)}
   .head{display:flex;align-items:center;justify-content:space-between;gap:16px}
-  .avatar{width:84px;height:84px;border-radius:50%;object-fit:cover;flex:none;border:3px solid rgba(255,255,255,.9);box-shadow:0 4px 14px rgba(0,0,0,.18)}
+  .avatar{width:96px;height:96px;border-radius:50%;object-fit:cover;flex:none;border:3px solid rgba(255,255,255,.9);box-shadow:0 4px 14px rgba(0,0,0,.18)}
   a.val{display:block;color:inherit;text-decoration:none}
   .val.sub{font-size:13px;font-weight:400;color:var(--ink2);margin-top:2px}
-  .zh{font-family:"Noto Serif TC",serif;font-weight:700;font-size:34px;letter-spacing:.12em}
+  .zh{font-family:"Noto Sans TC",sans-serif;font-weight:700;font-size:32px;letter-spacing:.1em}
   .en{font-size:15px;letter-spacing:.08em;opacity:.85;margin-top:6px;font-weight:500}
   .role{margin-top:18px;font-size:14px;line-height:1.7;opacity:.92}
   .role b{font-weight:600}
@@ -55,15 +55,13 @@
     </div>
     <div class="role">
       <b>大腸直腸外科 主治醫師</b><br>
-      Attending Surgeon, Colon &amp; Rectal Surgery<br>
-      長庚大學 講師 · Lecturer, Chang Gung University
+      Attending Surgeon, Colon &amp; Rectal Surgery
     </div>
   </section>
 
   <section class="body">
     <div class="org">
-      <strong>林口長庚紀念醫院 大腸直腸外科</strong>
-      Division of Colon and Rectal Surgery<br>
+      <strong>林口長庚紀念醫院</strong>
       Linkou Chang Gung Memorial Hospital, Taoyuan, Taiwan
     </div>
 
@@ -101,8 +99,8 @@
 </main>
 <div class="toast" id="toast">已複製</div>
 <script>
-const zhText="于鎮豪 醫師\n林口長庚紀念醫院 大腸直腸外科 主治醫師\n長庚大學 講師\n手機：+886 978 835 764\nEmail：mr1710@cgmh.org.tw\nEmail（個人）：howard1325@gmail.com\nORCID：0000-0002-7774-2462";
-const enText="Zhen-Hao Yu, MD\nAttending Surgeon, Division of Colon and Rectal Surgery\nLinkou Chang Gung Memorial Hospital, Taiwan\nLecturer, Chang Gung University\nMobile: +886 978 835 764\nEmail: mr1710@cgmh.org.tw\nPersonal email: howard1325@gmail.com\nORCID: 0000-0002-7774-2462";
+const zhText="于鎮豪 醫師\n林口長庚紀念醫院 大腸直腸外科 主治醫師\n手機：+886 978 835 764\nEmail：mr1710@cgmh.org.tw\nEmail（個人）：howard1325@gmail.com\nORCID：0000-0002-7774-2462";
+const enText="Zhen-Hao Yu, MD\nAttending Surgeon, Division of Colon and Rectal Surgery\nLinkou Chang Gung Memorial Hospital, Taiwan\nMobile: +886 978 835 764\nEmail: mr1710@cgmh.org.tw\nPersonal email: howard1325@gmail.com\nORCID: 0000-0002-7774-2462";
 const toast=document.getElementById("toast");
 function show(m){toast.textContent=m;toast.classList.add("on");setTimeout(()=>toast.classList.remove("on"),1600)}
 async function copy(t){try{await navigator.clipboard.writeText(t);show("已複製 Copied")}catch(e){show("此瀏覽器無法複製")}}
