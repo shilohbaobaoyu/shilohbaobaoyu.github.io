@@ -6,14 +6,14 @@
 <title>于鎮豪 Zhen-Hao Yu｜電子名片</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root{--ink:#14213d;--ink2:#4a5568;--line:#e5e1d8;--paper:#fbf9f4;--accent:#1f5f5b;--accent-soft:#e6efee}
+  :root{--ink:#0d2a45;--ink2:#4f5d6b;--line:#e3e8e5;--paper:#fcfdfc;--blue:#004c80;--teal:#01615d;--green:#017335;--orange:#e87905;--accent:#0f6b2a;--accent-soft:#e7f3ea;--blue-soft:#e5eef6}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:Inter,"Noto Sans TC",system-ui,sans-serif;background:#ecebe6;color:var(--ink);
+  body{font-family:Inter,"Noto Sans TC",system-ui,sans-serif;background:#eef2f0;color:var(--ink);
     min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px 16px}
   .card{width:100%;max-width:420px;background:var(--paper);border-radius:20px;overflow:hidden;
-    box-shadow:0 1px 2px rgba(0,0,0,.05),0 12px 40px rgba(20,33,61,.12)}
-  .top{background:var(--ink);color:#fff;padding:34px 28px 28px;position:relative}
-  .top::after{content:"";position:absolute;left:28px;bottom:0;width:40px;height:3px;background:#7fb7b1}
+    box-shadow:0 1px 2px rgba(0,0,0,.05),0 12px 40px rgba(0,76,128,.14)}
+  .top{background:linear-gradient(135deg,var(--blue) 0%,var(--teal) 60%,var(--green) 100%);color:#fff;padding:34px 28px 28px;position:relative}
+  .top::after{content:"";position:absolute;left:28px;bottom:0;width:48px;height:4px;border-radius:2px 2px 0 0;background:var(--orange)}
   .zh{font-family:"Noto Serif TC",serif;font-weight:700;font-size:34px;letter-spacing:.12em}
   .en{font-size:15px;letter-spacing:.08em;opacity:.85;margin-top:6px;font-weight:500}
   .role{margin-top:18px;font-size:14px;line-height:1.7;opacity:.92}
@@ -21,21 +21,21 @@
   .body{padding:22px 28px 8px}
   .org{font-size:13px;color:var(--ink2);line-height:1.65;padding-bottom:18px;border-bottom:1px solid var(--line)}
   .org strong{color:var(--ink);font-weight:600;display:block;font-size:14px}
-  .sec{font-size:11px;color:var(--ink2);letter-spacing:.08em;text-transform:uppercase;padding-top:16px}
+  .sec{font-size:11px;color:#c2600a;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding-top:16px}
   .tags{display:flex;flex-wrap:wrap;gap:6px;padding:10px 0 4px}
   .tags.end{padding-bottom:16px;border-bottom:1px solid var(--line)}
   .tag{font-size:12px;background:var(--accent-soft);color:var(--accent);padding:4px 10px;border-radius:999px}
   .rows{padding:6px 0}
   .row{display:flex;align-items:center;gap:14px;padding:12px 0;text-decoration:none;color:inherit;border-bottom:1px solid var(--line)}
   .row:last-child{border-bottom:none}
-  .ic{width:34px;height:34px;border-radius:10px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center;flex:none}
+  .ic{width:34px;height:34px;border-radius:10px;background:var(--blue-soft);color:var(--blue);display:flex;align-items:center;justify-content:center;flex:none}
   .ic svg{width:18px;height:18px}
   .lbl{font-size:11px;color:var(--ink2);letter-spacing:.06em;text-transform:uppercase}
   .val{font-size:15px;font-weight:500;margin-top:1px;word-break:break-all}
   .actions{padding:12px 28px 26px;display:flex;gap:10px}
-  button{flex:1;font:inherit;font-size:14px;font-weight:600;padding:12px;border-radius:12px;cursor:pointer;border:1px solid var(--ink);background:var(--ink);color:#fff}
-  button.ghost{background:transparent;color:var(--ink)}
-  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--ink);color:#fff;font-size:13px;padding:10px 16px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none}
+  button{flex:1;font:inherit;font-size:14px;font-weight:600;padding:12px;border-radius:12px;cursor:pointer;border:1px solid var(--blue);background:var(--blue);color:#fff}
+  button.ghost{background:transparent;color:var(--blue)}
+  .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--blue);color:#fff;font-size:13px;padding:10px 16px;border-radius:999px;opacity:0;transition:.25s;pointer-events:none}
   .toast.on{opacity:1;transform:translateX(-50%) translateY(0)}
 </style>
 </head>
